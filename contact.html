@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Let us know about your ideas or thoughts">
+  <meta name="author" content="Manu">
+  <title>科技公司预览 website</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/nav.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/form.css">
+  <link rel="stylesheet" type="text/css" href="css/contact.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a class="active_nav_item" href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <div id="main" class="container main_container">
+    <h1>我们很想听到您的声音</h1>
+    <section class="default_form contact_form">
+      <p>
+        我们想听听您的想法。 每个细节都很有用，但是下面的一些字段是必填项 :).
+      </p>
+      <form id="contact_form" class="col s4 m4 l4" action="" method="">
+        <div class="row">
+          <div class="col l7 m9 s12 center_horizontal">
+            <div class="input-field">
+              <input id="user_name" type="text" name="user_name">
+              <label for="user_name">姓 名 *</label>
+            </div>
+
+            <div class="input-field">
+              <input id="user_email" type="text" name="user_email">
+              <label for="user_email">邮 箱 *</label>
+            </div>
+
+            <div class="input-field">
+              <input id="user_phone" type="text" name="user_phone">
+              <label for="user_phone">电 话</label>
+            </div>
+
+            <div class="input-field">
+              <textarea class="materialize-textarea" id="form_message"></textarea>
+              <label for="form_message">告诉我们你的想法 *</label>
+            </div>
+
+            <div class="actions">
+              <label>
+                <input type="checkbox" name="gdpr_check" />
+                <span>我同意</span>
+				<span>《科技公司预览 website协议》</span>
+				<span>的规定</span>
+              </label>
+
+              <input class="pull-right submit_form_input" type="submit" value="确定" disabled>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+  </div>
+  <div class="container">
+    <footer class="page-footer">
+      <div class="row content">
+        <div class="col l6 s12">
+          <p>给我点一杯咖啡 ☕ 哈哈😄️! <i class="fa fa-coffee"></i></p>
+            +86 132 0000 0000
+          </p>
+          <p>
+            成都市-郫都区-天目路77号
+            <a href="#"><b>前往</b></a>
+          </p>
+        </div>
+        <div class="col l6 s12">
+          <div class="social_menu">
+            <a href="#">
+              <i class="fa fa-envelope"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2020 Copyright 本站由小李创建
+        <a class="grey-text text-lighten-4 up right" href="#main">
+          <i class="fa fa-angle-up up_icon"></i>
+        </a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Thank you!</h4>
+      <p>非常感谢您的留言，我们会尽快回复您。</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat" onclick="submitForm();">确定</a>
+    </div>
+  </div>
+
+  <script src="js/form.js"></script>
+</body>
+</html>
